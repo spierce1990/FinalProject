@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.ico" />
+    <title>QR Code Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <h1> QR Code DIY</h1>
+
+    <main>
+        <section id="qr-code-settings" class="container container-font">
+            <header>
+                <h2>Costumize Your Own QR Code</h2>
+                <h3>You may adjust settings to your liking below:</h3>
+            </header>
+
+            <div>
+                <div class="setting">
+                    <label for="data">Text/URL</label>
+                    <span>Includes text or a URL you want for your QR code to lead to.
+
+                    </span>
+                    <input type="text" name="data" id="data" min="1" max="900">
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
