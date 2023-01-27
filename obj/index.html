@@ -60,10 +60,32 @@
 
             <div class="setting">
                 <label for="size"> Sizing</label>
-                <span class="sub-label">200 x 200 </span
+                <span id="size-value" class="sub-label"> 200 x 200 </span>
                     <input type="range" name="size" id="size" min="100"
                     max="1000" value="200" step="100" />
             </div>
+            
+            <div class="setting">
+                <label for="margin"> Margin</label>
+                <span id="margin-value" clas="sub-label">1 px</span> 
+                    <input type="range" name="margin" id="margin" min="0"
+                    max="100" value="1" step="1" />
+            </div>
+
+            <div class="setting">
+                <fieldset>
+                    <legend> Image Format</legend>
+                    <div>
+                        <input type="radio" name="format" id="png"
+                        value="png" checked>
+                        <label for="png">PNG</label>
+
+                    </div>
+
+                    
+                </fieldset>
+            </div>
+            
             </div>
         </section>
 
