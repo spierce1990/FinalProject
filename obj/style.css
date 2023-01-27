@@ -35,6 +35,7 @@ main {
  width: 50%;
  max-width: 50%;
  min-height: 700px;
+ padding: 0.2rem;
 }
 
 .container header {
@@ -54,3 +55,70 @@ main {
     margin: auto;
 }
 
+.setting {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-label {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+
+input[type='text'] {
+    border: 1px solid #000;
+    padding: 0.35rem 0.85rem 0.35rem 0.4rem;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    font-weight: 200;
+    border-radius: 0.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type='text']:focus {
+    outline: none;
+    border: 1px solid #dea764;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+}
+
+.colors .settings {
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+
+input[type='range']::activate::-webkit-slider-runnable-track{
+    background-color: bisque;
+
+}
+
+input[type='range']:active::-webkit-scrollbar-corner{
+    background-color: azure;
+}
+
+input[type='range']::-moz-range-thumb{
+    width:20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+
+input[type='range']::-moz-range-thumb:hover{
+    background-color: azure;
+}
+
+
+input[type='range']:activate::-moz-range-thumb{
+    background-color: azure;
+}
